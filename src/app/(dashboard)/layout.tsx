@@ -29,6 +29,7 @@ export default function DashBoardLayout({
       {/*RIGHT*/}
       <div className="bg-[#F7F8FA] w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%]  flex flex-col overflow-scroll">
         <Navbar />
+        {children}
       </div>
     </div>
   );
