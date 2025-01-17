@@ -1,6 +1,10 @@
 import UserCard from "@/components/UserCard";
 import CountChart from "@/components/CountChart";
 import AttendanceChart from "@/components/AttendanceChart";
+import FinanceChart from "@/components/FinanceChart";
+import EventCalendar from "@/components/EventCalendar";
+import Announcements from "@/components/Announcements";
+import "react-calendar/dist/Calendar.css";
 
 const AdminPage = () => {
   return (
@@ -26,13 +30,16 @@ const AdminPage = () => {
           </div>
         </div>
         {/* BOTTOM CHART */}
-        <div className="w-full h-[500px]">
-          
+        <div className="w-full h-[700px]">
+          <FinanceChart />
         </div>
       </div>
 
       {/*Right*/}
-      <div className="bg-pink-100 w-full lg:w-1/3">r</div>
+      <div className="w-full lg:w-1/3 flex flex-col gap-8">
+        <EventCalendar />
+        <Announcements/>
+      </div>
     </div>
   );
 };
