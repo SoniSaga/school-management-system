@@ -53,7 +53,7 @@
   }
 
   .rbc-time-gutter{
-    height: 200%;
+    height: 100%;
   }
 
   
@@ -63,17 +63,20 @@
   
   .rbc-timeslot-group {
     background-color: #f7fdff !important;
+
   }
   
   .rbc-day-slot {
     font-size: 14px !important;
-    height: 200%;
+    height: 100%;
+    width: 1000px !important;
   }
   
   .rbc-event {
     border: none !important;
     color: black !important;
     padding: 10px !important;
+ 
     margin: 10px !important;
     width: 99% !important;
   }
